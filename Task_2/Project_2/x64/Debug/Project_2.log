@@ -1,0 +1,41 @@
+﻿  main.cpp
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4244: return: преобразование "double" в "_Rx", возможна потеря данных
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4244:         with
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4244:         [
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4244:             _Rx=float
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4244:         ]
+  (компиляция исходного файла "main.cpp")
+      D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\Users\nikol\source\repos\Project_2\Project_2\main.cpp(133,78):
+          выполняется компиляция ссылки на экземпляр шаблон функции "std::function<float (float)>::function<main::<lambda_2>,0>(_Fx &&)"
+          with
+          [
+              _Fx=main::<lambda_2>
+          ]
+              C:\Users\nikol\source\repos\Project_2\Project_2\main.cpp(133,18):
+              см. первую ссылку на "std::function<float (float)>::function" в "main"
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(1089,15):
+          выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Func_class<_Ret,float>::_Reset<_Ty>(_Fx &&)"
+          with
+          [
+              _Ret=float,
+              _Ty=main::<lambda_2>,
+              _Fx=main::<lambda_2>
+          ]
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(962,23):
+          выполняется компиляция ссылки на шаблон переменной "const bool _Is_large<std::_Func_impl_no_alloc<`main'::`7'::<lambda_2>,float,float> >"
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(748,28):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Func_impl_no_alloc<main::<lambda_2>,_Ret,float>"
+          with
+          [
+              _Ret=float
+          ]
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(872,9):
+          во время компиляции функции-члена класс шаблон "_Rx std::_Func_impl_no_alloc<main::<lambda_2>,_Rx,float>::_Do_call(float &&)"
+          with
+          [
+              _Rx=float
+          ]
+  
+  Project_2.vcxproj -> C:\Users\nikol\source\repos\Project_2\x64\Debug\Project_2.exe
